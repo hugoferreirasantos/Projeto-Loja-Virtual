@@ -1,0 +1,345 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seach{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.seachInput{
+    border: none;
+    background-color: transparent;
+
+}
+
+.seachInput::placeholder{
+    color: lightgrey;
+}
+
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+
+}
+.navButtom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgrey;
+    font-weight: 400;
+}
+
+.slider{
+    background: url("https://images.unsplash.com/photo-1550039120-5d6529f0c4de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    clip-path: polygon(0 0, 100% 0%, 100% 99%, 0 95%);
+    overflow: hidden;
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+}
+
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slideBg{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+
+.sliderImg{
+    z-index: 1;
+}
+
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 1;
+
+}
+
+.sliderPrice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    z-index: 1;
+
+}
+.buyButton{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    border: 1px solid gray;
+    background-color: black;
+    z-index: 1; 
+    cursor: pointer;
+}
+
+.buyButton:hover{
+    background-color: white;
+    color: black;
+}
+
+.sliderItem:nth-child(1) .slideBg{
+    background-color: rgb(32, 194, 223);
+}
+
+.sliderItem:nth-child(2) .slideBg{
+    background-color: rgb(243, 22, 22);
+}
+
+.sliderItem:nth-child(3) .slideBg{
+    background-color: rgb(23, 20, 219);
+}
+
+.sliderItem:nth-child(4) .slideBg{
+    background-color: rgb(167, 23, 59);
+}
+
+.sliderItem:nth-child(5) .slideBg{
+    background-color: rgb(18, 228, 70);
+}
+
+.sliderItem:nth-child(1) .sliderPrice{
+    color: rgb(32, 194, 223);
+}
+
+.sliderItem:nth-child(2) .sliderPrice{
+    color: rgb(243, 22, 22);
+}
+
+.sliderItem:nth-child(3) .sliderPrice{
+    color: rgb(23, 20, 219);
+}
+
+.sliderItem:nth-child(4) .sliderPrice{
+    color: rgb(167, 23, 59);
+}
+
+.sliderItem:nth-child(5) .sliderPrice{
+    color: rgb(18, 228, 70);
+}
+
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.featureIcon{
+    width: 50px;
+    height: 50px;
+}
+
+.featureTitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+.featuredDesc{
+    color: gray;
+    width: 50%;
+    height: 100px;
+}
+
+.product{
+    height: 100vw;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 6%, 100% 1%, 100% 99%, 0 93%);
+}
+
+.payment{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.87); 
+box-shadow: 0px 0px 15px -3px rgba(0,0,0,0.87);
+
+}
+
+.payTitle{
+    font-size: 20px;
+    color: lightgray;
+
+}
+
+label{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.payInput{
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.payInput::placeholder{
+    color: lightgray;
+}
+
+.cardIcons{
+    display: flex;
+
+}
+
+.cardIcon{
+    margin-right: 10px;
+}
+
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payInputsm{
+    width: 30%;
+}
+
+.payButton{
+    position: absolute;
+    height: 40px;
+    bottom: -40;
+    width: 100%;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.87); 
+box-shadow: 0px 0px 13px 2px rgba(0,0,0,0.87);
+}
+
+.productImg{
+    width: 50%;
+}
+
+.productDetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+}
+
+.productTitle{
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.productDesc{
+    font-size: 24px;
+    color: gray;
+}
+
+.colors,.sizes{
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.color{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.color:last-child{
+    background-color: white;
+}
+
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.productButton{
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.productButton:hover{
+    background-color: white;
+    color: black;
+}
